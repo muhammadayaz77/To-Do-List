@@ -21,3 +21,4 @@ else
 function rem(){
    ul.lastChild.remove();
 }
+
