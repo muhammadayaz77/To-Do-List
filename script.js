@@ -1,12 +1,23 @@
-let array = [];
+let ul = document.querySelector('.ul');
+let input = document.querySelector('.in')
 
-function add()
+
+    function add(){
+        if(input.value == '')
 {
-    let input = document.querySelector(".in").value;
-    array.push(input);
-    document.querySelector(".col2").innerHTML = array;
+    alert('List is empty;')
 }
-function del(){
-    array.pop(); 
-    document.querySelector(".col2").innerHTML = array;
-}  
+else
+{
+
+        let li = document.createElement('li');
+        li.textContent = input.value;
+        ul.appendChild(li);
+        input.value = "";
+}
+    }
+
+
+function rem(){
+   ul.lastChild.remove();
+}

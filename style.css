@@ -20,18 +20,29 @@
     width: 400px;
     height: 35px;
     padding: 10px 10px;
+    outline: unset;
+}
+ul{
+    list-style: none ;
+    padding-bottom: 10px;
+}
+ul li{
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: bisque;
 }
 .col1 button{
-    padding: 6px 16px;
+    padding: 8px 16px;
 }
 .con2{
-    height: 500px;
+    min-height: 450px;
     background-color: rgb(197, 175, 175);
     display: flex;
     justify-content: center;
 }
 .col2{
+    margin-top: 5px;
     width: 40%;
-    border: 1px dashed black;
-    height: 400px;
+    /* border: 1px dashed black; */
+    max-height: 200px;
 }
